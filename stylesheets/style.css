@@ -86,21 +86,17 @@ body {
     /*font-weight: 700;*/
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: rgb(245, 243, 239);
+    padding-bottom: 60px;
 }
 
 .navbar {
-    z-index: 4;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: 1;
     color: white;
     min-height: 60px;
-    margin-bottom: 21px;
-}
-
-.navbar-fixed {
     padding: 25px 100px;
-    right: 0;
+    position: absolute;
     left: 0;
-    position: fixed;
+    right: 0;
 }
 
 nav ul li {
@@ -123,11 +119,12 @@ nav ul li a {
     font-weight: 300;
 }
 
-nav a:hover{
+nav a:hover {
     color: #154440;
 }
+
 nav ul li.over a:hover,
-nav ul li:hover a:hover{
+nav ul li:hover a:hover {
     color: #154440;
     box-shadow: 0px 0px 5px white;
     background-color: rgba(251, 251, 251, 0.65);
@@ -139,31 +136,24 @@ nav ul li:hover a:hover{
     }
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .container {
         width: 970px;
     }
 }
+
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
 }
 
-
 .navbar-right li:last-child a {
     border: solid 1px white;
     border-radius: 3px;
 }
 
-
-
-@media (min-width: 768px){
-    .navbar-fixed {
-        padding: 25px 0;
-
-    }
-
+@media (min-width: 768px) {
     .navbar-logo {
         font-size: 2.7em;
     }
@@ -200,7 +190,7 @@ header {
     padding-left: 103px;
     height: 29%;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .search-title {
@@ -227,11 +217,11 @@ header {
     font-weight: 700;
 }
 
-
-.form-submit button:hover{
+.form-submit button:hover {
     background-color: aquamarine;
     color: black;
 }
+
 .form-submit input {
     border: none;
     border-radius: 5px 0 0 5px;
@@ -253,7 +243,6 @@ header {
     background-color: #00E1A9;
 }
 
-
 header::after {
     content: "";
     position: absolute;
@@ -262,7 +251,7 @@ header::after {
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-color: rgba(132, 137, 150, 0.6);
+    background-color: rgba(132, 137, 150, 0.5);
 }
 
 .product-list {
@@ -310,7 +299,8 @@ h3 {
     font-size: 1rem;
     font-weight: 700;
 }
-h4{
+
+h4 {
     font-size: 1.15rem;
     font-weight: 700;
 }
@@ -318,6 +308,7 @@ h4{
 .work-compare {
 
 }
+
 .how-work {
     text-align: center;
     top: -25px;
@@ -325,15 +316,15 @@ h4{
     padding-bottom: 22px;
 }
 
-.how-work ul{
+.how-work ul {
     padding: 48px 30px;
     width: 107%;
 }
+
 .how-work li {
     width: 33.33%;
     padding: 15px 56px;
 }
-
 
 .how-work h3::before {
     margin: 0 auto;
@@ -347,8 +338,9 @@ h4{
     box-shadow: 0 1px 1px white;
     -webkit-box-shadow: 0 1px 1px white;
 }
+
 .how-work ul li span {
-    margin:0 auto;
+    margin: 0 auto;
     padding: 10px 0;
     width: 40px;
     display: block;
@@ -360,11 +352,11 @@ h4{
 }
 
 .how-work ul li:first-child span::after,
-.how-work ul li:nth-child(2) span::after{
+.how-work ul li:nth-child(2) span::after {
     content: "";
     height: 0px;
     display: block;
-    width:914%;
+    width: 914%;
     position: relative;
     top: -10px;
     left: 38px;
@@ -373,25 +365,26 @@ h4{
     box-shadow: 0 1px 0px white;
 }
 
-.how-work img{
+.how-work img {
     margin: 36px auto 0;
     display: block;
 }
 
-
-p{
+p {
     font-size: 13px;
     line-height: 18px;
     color: #5F5D5D;
 }
 
-.why-choose{
+.why-choose {
     padding: 80px 30px;
 }
-.why-choose h3{
+
+.why-choose h3 {
     text-align: center;
 }
-.why-choose h3::before{
+
+.why-choose h3::before {
     margin: 0 auto;
     display: block;
     content: "";
@@ -404,12 +397,13 @@ p{
     -webkit-box-shadow: 0 1px 1px white;
 }
 
-.why-choose ul{
+.why-choose ul {
     padding-top: 25px;
     margin-left: 68px;
 }
-.why-choose li{
-    width:50%;
+
+.why-choose li {
+    width: 50%;
     padding-left: 78px;
     padding-right: 88px;
 }
@@ -420,46 +414,44 @@ p{
     position: relative;
 }
 
-hr{
+hr {
     width: 100%;
 }
-ul{
+
+ul {
     overflow: hidden;
 }
 
-.switch{
+.switch {
     padding: 129px 68px 0 68px;
     text-align: center;
     margin-left: 137px;
 }
 
-
-.switch ul{
-    margin:0 auto;
+.switch ul {
+    margin: 0 auto;
     width: 36%;
 }
 
-.switch > ul{
+.switch > ul {
     width: 36%;
     border: solid 1px #b0b7b2;
     border-radius: 5px;
 }
 
-
-.switch > ul li{
+.switch > ul li {
     width: 50%;
     padding: 21px 0px;
 }
 
-.switch > ul li:first-child{
-    color:white;
+.switch > ul li:first-child {
+    color: white;
     background-color: #154440;
     border-right: solid 1px black;
 }
 
-
-.switch-photo img{
-    padding:10px;
+.switch-photo img {
+    padding: 10px;
     width: 120px;
     height: 120px;
     border: 1px solid #F4F3F1;
@@ -470,46 +462,51 @@ ul{
 }
 
 .switch-photo li.over img,
-.switch-photo li:hover img{
-    padding:0;
+.switch-photo li:hover img {
+    padding: 0;
     -webkit-filter: none;
     filter: none;
     opacity: 1;
 }
-.switch-photo{
+
+.switch-photo {
     padding-top: 40px;
 }
 
-.switch-photo p{
+.switch-photo p {
     font-size: 1.25rem;
     margin-top: 13px;
     line-height: 25px;
 }
+
 .switch-photo:before {
     font-size: 2em;
     content: "“";
     font-weight: 900;
     color: gray;
 }
-.switch-photo ul{
+
+.switch-photo ul {
     margin-top: 91px;
     width: 45%;
 }
+
 .switch-photo ul li {
     width: 33.33%;
     padding: 20px 17px;
 }
 
-.footer-search{
+.footer-search {
     margin-top: 100px;
-    padding:83px 0;
+    padding: 83px 0;
     position: relative;
     background: url("../images/sunset-resized.jpg") right center no-repeat;
 }
 
-.search{
-    position:relative;
+.search {
+    position: relative;
 }
+
 .footer-search::after {
     content: "";
     position: absolute;
@@ -518,34 +515,38 @@ ul{
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-color: rgba(132, 137, 150, 0.6);
+    background-color: rgba(132, 137, 150, 0.4);
 }
 
-
-.footer-search label{
+.footer-search label {
     color: white;
     font-size: 1.5rem;
     font-weight: 500;
     margin-right: 17px;
     margin-left: 94px;
 }
-.footer-search .form-submit input{
-    width:46%;
+
+.footer-search .form-submit input {
+    width: 46%;
 }
 
-footer{
+footer {
     font-size: 16px;
-    padding: 15px 187px;
+    padding: 5px 187px;
     color: #71716F;
     background-color: white;
 }
 
-
-
 footer ul li.over a:hover,
-footer ul li:hover a:hover{
+footer ul li:hover a:hover {
     background-color: rgba(176, 183, 178, 0.6);
-    color:white;
+    color: white;
 }
 
-
+.footer-fixed {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+}

@@ -33,13 +33,7 @@ html {
 }
 
 /* line 24, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-    list-style: none;
-}
 
-li {
-    float: left;
-}
 
 /* line 26, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
